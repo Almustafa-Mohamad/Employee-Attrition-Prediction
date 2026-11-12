@@ -1,4 +1,4 @@
-
+import os
 import streamlit as st
 import pandas as pd
 import joblib
@@ -61,7 +61,7 @@ FEATURE_NAMES = [
 
 @st.cache_resource
 def load_artifacts():
-    if not MODEL_PATH.exists():
+    if not os.path.exists(MODEL_PATH):
         raise FileNotFoundError(
             f"Model file not found: {MODEL_PATH}"
         )
