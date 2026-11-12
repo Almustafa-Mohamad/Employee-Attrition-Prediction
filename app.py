@@ -17,8 +17,8 @@ st.set_page_config(
 BASE_DIR = Path(__file__).resolve().parent
 MODEL_DIR = BASE_DIR / "models"
 
-MODEL_PATH = MODEL_DIR / "random_forest_smote.pkl"
-PREPROCESSOR_PATH = MODEL_DIR / "preprocessor.pkl"
+MODEL_PATH = "random_forest_smote.pkl"
+PREPROCESSOR_PATH = "preprocessor.pkl"
 
 FEATURE_NAMES = [
     "Age",
