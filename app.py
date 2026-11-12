@@ -66,7 +66,7 @@ def load_artifacts():
             f"Model file not found: {MODEL_PATH}"
         )
 
-    if not PREPROCESSOR_PATH.exists():
+    if not os.path.exists(PREPROCESSOR_PATH):
         raise FileNotFoundError(
             f"Preprocessor file not found: {PREPROCESSOR_PATH}"
         )
